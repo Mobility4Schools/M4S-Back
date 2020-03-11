@@ -16,6 +16,10 @@ class CreateTipoDocumentoTable extends Migration
         Schema::create('tipo_documento', function (Blueprint $table) {
             $table->bigIncrements('id_tDocumento');
             $table->string('td_nombre',50);
+            $table->string('td_abreviatura',25);
+            $table->integer('td_longitud');
+            $table->char('td_usuario',1);
+            $table->char('td_conductor',1);
             $table->char('td_status',1);
             $table->timestamps();
         });

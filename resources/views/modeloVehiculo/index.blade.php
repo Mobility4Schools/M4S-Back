@@ -29,8 +29,8 @@
             <td>{{ $model->mv_nombre }}</td>
             <td>{{ $model->mv_nroAsientos }}</td>
             <td>{{ $model->mv_nroPasajeros }}</td>
-            <td>{{ $model->m_nombre }}</td>
-            <td>{{ $model->tv_nombre }}</td>
+            <td>{{ $model->marcas->m_nombre }}</td>
+            <td>{{ $model->tipoVehiculo->tv_nombre }}</td>
             <td>{{ $model->mv_status }}</td>
             <td>
             <a href="{{ route('modeloVehiculo.edit',$model->id_mVehiculo) }}">Editar</a>

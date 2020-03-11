@@ -26,6 +26,7 @@ class CreateUsuarioTable extends Migration
             $table->string('us_clave',30);
             $table->unsignedBigInteger('id_tUsuario');
             $table->foreign('id_tUsuario')->references('id_tUsuario')->on('tipo_usuario');
+            $table->char('us_status',1);
             $table->timestamps();
         });
     }
